@@ -1,0 +1,19 @@
+
+.head{
+  font-family: 'DaysOne', sans-serif;
+  text-indent: 1.25em;
+  letter-spacing: 1.25em;
+  color: #000000;
+  opacity: 1;
+}
+
+@media (max-width: 850px){
+  .head{
+    font-family: 'DaysOne', sans-serif;
+    text-indent: 1.25em;
+    letter-spacing: 1.25em;
+    color: #000000;
+    opacity: 1;
+    height: .3em;
+  }
+}

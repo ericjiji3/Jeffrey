@@ -1,0 +1,255 @@
+.slides{
+  position: relative;
+  height: 75vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5em;
+  margin-bottom: 3em;
+}
+
+.pic1{
+  width: 499.69px;
+  height: 750px;
+  border-radius: 10px;
+  /* width: 1066px;
+  height: 1600px; */
+}
+.pic2{
+  width: 499.69px;
+  height: 750px;
+  border-radius: 10px;
+}
+.pic3{
+  width: 562.5px;
+  height: 750px;
+  border-radius: 10px;
+}
+.pic4{
+  width: 562.5px;
+  height: 750px;
+  border-radius: 10px;
+}
+.pic5{
+  width: 1000px;
+  height: 668.125px;
+  border-radius:10px
+}
+.rightArrow{
+  position: absolute;
+  top: 47%;
+  right: 1vw;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}
+
+.leftArrow{
+  position: absolute;
+  top: 47%;
+  left: 1vw;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}
+
+.slideInactive{
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active{
+  position: relative;
+  opacity: 1;
+  transition-duration: 1s;
+}
+@media(max-width: 2000px){
+  .slides{
+    position: relative;
+    height: 75vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+  }
+
+  .pic1{
+    width: 433px;
+    height: 650px;
+    border-radius: 10px;
+    /* width: 1066px;
+    height: 1600px; */
+  }
+  .pic2{
+    width: 433px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .pic3{
+    width: 488px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .pic4{
+    width: 488px;
+    height: 650px;
+    border-radius: 10px;
+  }
+  .pic5{
+    width: 700px;
+    height: 468px;
+    border-radius:10px
+  }
+  .rightArrow{
+    position: absolute;
+    top: 47%;
+    right: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+
+  .leftArrow{
+    position: absolute;
+    top: 47%;
+    left: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+}
+@media(max-width: 1500px){
+  .slides{
+    position: relative;
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5em;
+    margin-bottom: 3em;
+  }
+
+  .pic1{
+    width: 366px;
+    height: 550px;
+    border-radius: 10px;
+    /* width: 1066px;
+    height: 1600px; */
+  }
+  .pic2{
+    width: 366px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .pic3{
+    width: 413px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .pic4{
+    width: 413px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .pic5{
+    width: 700px;
+    height: 468px;
+    border-radius:10px
+  }
+  .rightArrow{
+    position: absolute;
+    top: 47%;
+    right: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+
+  .leftArrow{
+    position: absolute;
+    top: 47%;
+    left: 1vw;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+  }
+}
+@media(max-width: 850px){
+  .slides{
+    position: relative;
+    height: 45vh;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0%;
+  }
+  .slide.active{
+    position: relative;
+    opacity: 1;
+    transition-duration: 1s;
+    /* top: -5%; */
+  }
+
+  .pic1{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .pic2{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .pic3{
+    width: 225px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .pic4{
+    width: 224.7px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .pic5{
+    width: 350px;
+    height: 255.842px;
+    border-radius:10px
+  }
+  .rightArrow{
+    position: absolute;
+    top: 100%;
+    right: 8vw;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  .leftArrow{
+    position: absolute;
+    top: 100%;
+    left: 8vw;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+}

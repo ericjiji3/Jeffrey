@@ -1,0 +1,314 @@
+.tab li:hover{
+  background-color: #74bedb;
+  font-family: 'SpaceMono';
+}
+.tab, .tabU{
+  font-family: 'SpaceMonoReg', monospace;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#hidden{
+  height: auto;
+}
+.tabL{
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.albumPic{
+  width: 100%;
+  height: 100%;
+
+}
+.emailPop{
+  position: absolute;
+  top: 200px;
+  left: 600px;
+  right: 600px;
+  bottom: 350px;
+  border: 1px solid black;
+  background: #fff;
+  padding-left: 10px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+}
+.emailOverlay{
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.bold{
+  font-family: 'SpaceMono';
+}
+.listClass{
+  float: right;
+}
+.t1, .t2, .t3, .t4, .t5, .t6{
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+.l1, .l2, .l3, .l4, .l5, .l6{
+  text-decoration: none;
+  color: black;
+  width: max-content;
+  margin: auto;
+}
+.albumPop{
+  font-family: 'SpaceMonoReg', monospace;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  top: 17vh;
+  left: 39vw;
+  right: 39vw;
+  bottom: 20vh;
+  border: 1px solid black;
+  background: #fff;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+}
+.albumOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.navButt{
+  display: none;
+}
+@media(max-width: 1500px){
+  .emailPop{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    right: 400px;
+    bottom: 225px;
+    border: 1px solid black;
+    background: #fff;
+    padding-left: 10px;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+  }
+  .emailOverlay{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  .bold{
+    font-family: 'SpaceMono';
+  }
+  .t1, .t2, .t3, .t4, .t5, .t6{
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+  .l1, .l2, .l3, .l4, .l5, .l6{
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    margin: auto;
+  }
+  .albumPop{
+    font-family: 'SpaceMonoReg', monospace;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    top: 17vh;
+    left: 39vw;
+    right: 39vw;
+    bottom: 20vh;
+    border: 1px solid black;
+    background: #fff;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+  }
+  .albumOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+}
+@media(max-width: 850px){
+  .emailPop{
+    position: absolute;
+    top: 125px;
+    left: 25px;
+    right: 25px;
+    bottom: 125px;
+    border: 1px solid black;
+    background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+  }
+  .hamburger{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .tabU{
+    height: auto;
+    left: -50px;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .tab{
+    height: auto;
+    left: -50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+
+  .tabL{
+    height: auto;
+    left: -50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .emailOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  .albumPop{
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    right: 25px;
+    bottom: 100px;
+    border: 1px solid black;
+    background: #fff;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+  }
+  .albumOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  .navButt{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: none;
+  	color: inherit;
+  	border: none;
+  	padding-top: 10px;
+    padding-bottom: 0;
+  	font: inherit;
+  	cursor: pointer;
+  	outline: inherit;
+    margin-bottom: -1px;
+
+  }
+  .buttonDiv{
+      text-align: center;
+      justify-content: center;
+      left: 20px;
+  }
+
+
+  #butA{
+
+    left: 0;
+    right: 0;
+    transform: rotate(90deg);
+    transition: .3s ease-in-out;
+    padding: 0 0 0 20px;
+
+
+  }
+
+
+  #butH{
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: .3s ease-in-out;
+  }
+  #activeDiv{
+    position: absolute;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    z-index: 950;
+    display: flex;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: #b3d8eb;
+    transition: .3s ease-in-out;
+    padding-bottom: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+  }
+  #hiddenDiv{
+
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+  }
+  #hidden{
+    /* opacity: 0;
+    height: 0;
+    margin: 0; */
+    display:none;
+  }
+
+}
