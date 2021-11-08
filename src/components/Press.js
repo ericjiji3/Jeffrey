@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./press.css";
-import pic7 from "./pics/pic7.jpeg";
+import pic7 from "./pics/pic5.jpg";
 import podcast from "./pics/podcast.jpeg";
 import {Link} from "react-router-dom";
 

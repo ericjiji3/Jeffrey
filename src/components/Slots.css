@@ -1,0 +1,28 @@
+.slots{
+    height: 50%;
+    overflow: hidden; 
+}
+.slots #slot1, #slot2, #slot3{
+    width: 30%;   
+}
+/* .slots .item{
+    display: none;
+} */
+.slots .item.active{
+    display: block;
+    background-color: blue;
+}
+.slots #slot1 .carousel-inner{
+    height: 100%;
+}
+
+/* @keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(startYposition);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(endYposition);
+    }
+} */

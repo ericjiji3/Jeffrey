@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Slide from "./Slide";
+import Slots from "./Slots";
 import {SlideData} from "./SlideData";
 import AlbumPic from "./AlbumPic";
 import Press from "./Press";
@@ -19,17 +19,18 @@ class Home extends React.Component{
   render(){
     return(
       <div>
+        <div className = "row justify-content-center" style={{marginLeft: "0vw", marginRight: "0vw"}}>
+          <Navbar/>
+        </div>
+        
         <div className = "row" style={{marginLeft: "0vw", marginRight: "0vw"}}>
-          <div className = "col-sm-3 mb-1">
-            <Navbar/>
-          </div>
-          <div className = "slide col-sm-9">
+          {/* <div className = "slide">
             <Slide slides = {SlideData}/>
-          </div>
+          </div> */}
+          <Slots slides={SlideData}/>
         </div>
         <div>
-
-           <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "pic"></img></a>
+           <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "link-picture"></img></a>
         </div>
         <iframe className = "however row mx-auto my-3" src="https://www.youtube.com/embed/vgjgmDccKyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
         <Press/>

@@ -5,7 +5,7 @@ export const NavbarData = [
   {
     title: "HOME",
     path: "/",
-    cName: "home mask",
+    cName: "Home",
     isEmail: false
   },
   {

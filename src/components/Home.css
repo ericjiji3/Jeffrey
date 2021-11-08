@@ -26,7 +26,7 @@
   transform: rotate(180deg);
 }
 
-.pic{
+.link-picture{
   width: 15rem;
   height: 15rem;
   display: flex;
@@ -36,7 +36,7 @@
   border: 5px solid black;
 }
 @media(max-width: 850px){
-  .pic{
+  link-picture{
     width: 15rem;
     height: 15rem;
     display: flex;

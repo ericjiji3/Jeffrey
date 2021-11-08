@@ -12,7 +12,7 @@ import {
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
-import pic1 from "../components/pics/pic1.jpeg";
+import pic1 from "../components/pics/pic1.jpg";
 
 class About extends React.Component{
   constructor(props){
