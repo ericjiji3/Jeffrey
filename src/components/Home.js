@@ -23,11 +23,13 @@ class Home extends React.Component{
           <Navbar/>
         </div>
         
-        <div className = "row" style={{marginLeft: "0vw", marginRight: "0vw"}}>
-          {/* <div className = "slide">
+        {/* <div className = "row" style={{marginLeft: "0vw", marginRight: "0vw"}}>
+          <div className = "slide">
             <Slide slides = {SlideData}/>
-          </div> */}
-          <Slots slides={SlideData}/>
+          </div>
+        </div> */}
+        <div className="row">
+        <Slots slides={SlideData}/>
         </div>
         <div>
            <a className = "linkPic" href = "http://hyperurl.co/jordon.CHROMA"><div className= "linkPic-text"> LATEST SOUNDS </div><img src = {pic6} className = "link-picture"></img></a>

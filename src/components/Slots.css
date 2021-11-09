@@ -1,20 +1,123 @@
-.slots{
+/* .slots{
     height: 50%;
     overflow: hidden; 
-}
-.slots #slot1, #slot2, #slot3{
-    width: 30%;   
-}
-/* .slots .item{
-    display: none;
 } */
-.slots .item.active{
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    /* background-color: #972a27; */
+    background-image: url("./pics/stone.jpg");
+    border-radius: 10%;
+    border-top: 15px solid #DAA520;
+    border-bottom: 15px solid #DAA520;
+    border-left: 30px solid #a01813;
+    border-right: 30px solid #a01813;;
+    animation-name: color-transition;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* .container .lever{
+    
+} */
+.container .lever-up{
+    width: 150px;
+    height: 150px;
+    background-image: url("./pics/lever_up.png");
+    background-position: bottom;
+    background-size: 150px;
+}
+.container .lever-down{
+    width: 150px;
+    height: 150px;
+    background-image: url("./pics/lever_down.png");
+    background-size: 150px;
+}
+@keyframes lever-switch{
+    from{
+        background-position: left; 
+    }
+    to{
+        background-position: right;
+    }
+}
+@keyframes color-transition {
+	0% {
+        border-top-color:#4C6085;
+        border-bottom-color: #4C6085;
+		border-left-color: #4C6085;
+        border-right-color: #4C6085;
+	}
+	20% {
+        border-top-color:#80D39B;
+        border-bottom-color: #80D39B;
+		border-left-color: #80D39B;
+		border-right-color: #80D39B;
+	}
+	40% {
+        border-top-color:#BE3E82;
+        border-bottom-color: #BE3E82;
+		border-left-color: #BE3E82;
+		border-right-color: #BE3E82;
+	}
+    60% {
+        border-top-color:#be623e;
+        border-bottom-color: #be623e;
+		border-left-color: #be623e;
+		border-right-color: #be623e;
+	}
+    80%{
+        border-top-color:#4f1bc7;
+        border-bottom-color: #4f1bc7;
+        border-left-color: #4f1bc7;
+		border-right-color: #4f1bc7;
+    }
+	100% {
+        border-top-color:#4C6085;
+        border-bottom-color: #4C6085;
+		border-left-color: #4C6085;
+		border-right-color: #4C6085;
+	}
+}
+#slot1, #slot2, #slot3{
+    background: #fafafa;
+    box-shadow: 0 0 13px 7px rgba(0, 0, 0, 0.4) inset;
+    margin: 0 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    height: 100%;
+    width: 500%;
+    flex-shrink: 0;
+    transition: all .3s;
+}
+.slider .item{
+    flex-basis: 20%;
+    width: 20%;
+    margin: 20px 12px;
+    flex-shrink: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .slots #slot1, #slot2, #slot3{
+    width: 30%;   
+    max-height: -webkit-fill-available;
+} */
+
+/* .slots .item.active{
     display: block;
     background-color: blue;
-}
-.slots #slot1 .carousel-inner{
-    height: 100%;
-}
+} */
 
 /* @keyframes fadeIn{
     0% {
@@ -24,5 +127,5 @@
     100% {
         opacity: 1;
         transform: translateY(endYposition);
-    }
+    }npm st
 } */
