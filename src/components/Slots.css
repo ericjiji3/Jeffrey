@@ -18,10 +18,10 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-/* .container .lever{
-    
-} */
-.container .lever-up{
+.container .slider{
+    padding-left: 0;
+}
+/* .container .lever-up{
     width: 150px;
     height: 150px;
     background-image: url("./pics/lever_up.png");
@@ -33,7 +33,7 @@
     height: 150px;
     background-image: url("./pics/lever_down.png");
     background-size: 150px;
-}
+} */
 @keyframes lever-switch{
     from{
         background-position: left; 
@@ -42,6 +42,56 @@
         background-position: right;
     }
 }
+#slot1, #slot2, #slot3{
+    background: #fafafa;
+    box-shadow: 0 0 13px 7px rgba(0, 0, 0, 0.4) inset;
+    margin: 0 15px;
+    /* width: 100%; */
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    height: 100%;
+    /* width: 500%; */
+    flex-shrink: 0;
+    transition: all .3s;
+}
+.slider .item{
+    flex-basis: 100%;
+    width: 100%;
+    margin: 20px 5px;
+    flex-shrink: 0;
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .slots #slot1, #slot2, #slot3{
+    width: 30%;   
+    max-height: -webkit-fill-available;
+} */
+
+/* .slots .item.active{
+    display: block;
+    background-color: blue;
+} */
+
+/* @keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(startYposition);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(endYposition);
+    }npm st
+} */
+
 @keyframes color-transition {
 	0% {
         border-top-color:#4C6085;
@@ -80,52 +130,3 @@
 		border-right-color: #4C6085;
 	}
 }
-#slot1, #slot2, #slot3{
-    background: #fafafa;
-    box-shadow: 0 0 13px 7px rgba(0, 0, 0, 0.4) inset;
-    margin: 0 15px;
-    /* width: 100%; */
-    width: 100%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    overflow: hidden;
-}
-.slider{
-    display: flex;
-    height: 100%;
-    /* width: 500%; */
-    flex-shrink: 0;
-    transition: all .3s;
-}
-.slider .item{
-    flex-basis: 100%;
-    width: 100%;
-    margin: 20px 12px;
-    flex-shrink: 0;
-    /* flex: 1; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* .slots #slot1, #slot2, #slot3{
-    width: 30%;   
-    max-height: -webkit-fill-available;
-} */
-
-/* .slots .item.active{
-    display: block;
-    background-color: blue;
-} */
-
-/* @keyframes fadeIn{
-    0% {
-        opacity: 0;
-        transform: translateY(startYposition);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(endYposition);
-    }npm st
-} */
