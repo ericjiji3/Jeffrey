@@ -10,8 +10,6 @@ import pic7 from "./pics/lottery_pics/pic7.jpg";
 import pic8 from "./pics/lottery_pics/pic8.jpg";
 import pic9 from "./pics/lottery_pics/pic9.jpg";
 import pic10 from "./pics/lottery_pics/pic10.jpg";
-import Spritesheet from 'react-responsive-spritesheet';
-import buttons from './pics/question.png';
 import lever from "./pics/leveranimation.png";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import {BiLeftArrowAlt, BiRightArrowAlt} from "react-icons/bi";
@@ -124,23 +122,23 @@ function Slots(props){
     }
   return(
     <div className="container row">
-        <div className="col-md-7">
+        <div className="col-md-3">
             <div className="row" id="slot1" data-interval="false" data-ride="carousel">
                 <div class="slider">
                     <div className =  "item one">
-                        <img src = {pic1} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {pic2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {pic3} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item four">
-                        <img src = {pic4} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item five">
-                        <img src = {pic5} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
                     </div>
                 </div>
             </div>  
@@ -148,19 +146,19 @@ function Slots(props){
             <div className="row" id="slot2" data-interval="false" data-ride="carousel">
                 <div class="slider">
                     <div className =  "item one">
-                        <img src = {pic2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {pic3} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {pic1} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item four">
-                        <img src = {pic2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item five">
-                        <img src = {pic5} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
                     </div>
                 </div>
             </div>  
@@ -168,32 +166,25 @@ function Slots(props){
             <div className="row" id="slot3" data-interval="false" data-ride="carousel">
                 <div class="slider">
                     <div className =  "item one">
-                        <img src = {pic4} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {pic2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {pic5} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item four">
-                        <img src = {pic1} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
                     </div>
                     <div className =  "item five">
-                        <img src = {pic3} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
                     </div>
                 </div>
             </div> 
         </div>
-        <div className="col-md-3 my-auto">
-            <span className="lever-up" onClick={handleClick}><Spritesheet
-                                                                    image={buttons}
-                                                                    widthFrame={32}
-                                                                    heightFrame={32}
-                                                                    steps={2}
-                                                                    fps={2}
-                                                                />
-        </span>
+        <div className="col-md-3">
+        <span className="lever-up" onClick={handleClick}>djafbdjasflasdbj</span>
         </div>
     </div>
     
