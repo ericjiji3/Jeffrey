@@ -51,7 +51,7 @@ function Slots(props){
             if(randomValue1 >= randomValue2 && randomValue1 >= randomValue3){
                 console.log('slot1 slowest!')
             }
-            $('#slot1 .slider').css('transform','translate(-100%)');
+            $('#slot1 .slider').css('transform','translate(-20%)');
             $('#slot1 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
             
@@ -75,7 +75,7 @@ function Slots(props){
             if(randomValue2 >= randomValue1 && randomValue2 >= randomValue3){
                 console.log('slot2 slowest!')
             }
-            $('#slot2 .slider').css('transform','translate(-100%)');
+            $('#slot2 .slider').css('transform','translate(-20%)');
             $('#slot2 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
             
@@ -99,7 +99,7 @@ function Slots(props){
             if(randomValue3 >= randomValue2 && randomValue3 >= randomValue1){
                 console.log('slot3 slowest!')
             }
-            $('#slot3 .slider').css('transform','translate(-100%)');
+            $('#slot3 .slider').css('transform','translate(-20%)');
             $('#slot3 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
             
@@ -122,69 +122,114 @@ function Slots(props){
     }
   return(
     <div className="container row">
-        <div className="col-md-3">
-            <div className="row" id="slot1" data-interval="false" data-ride="carousel">
-                <div class="slider">
-                    <div className =  "item one">
-                        <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item two">
-                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item three">
-                        <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item four">
-                        <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item five">
-                        <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
-                    </div>
+        <div className="row">
+        <div className="col" id="slot1" data-interval="false" data-ride="carousel">
+            <div class="slider">
+                <div className =  "item one">
+                    <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
                 </div>
-            </div>  
+                <div className =  "item two">
+                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item three">
+                    <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item four">
+                    <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item five">
+                    <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                {/* <div className =  "item six">
+                    <img src = {pic6} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item seven">
+                    <img src = {pic7} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item eight">
+                    <img src = {pic8} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item nine">
+                    <img src = {pic9} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item ten">
+                    <img src = {pic10} alt = "errror" className = "d-block w-100"></img>
+                </div> */}
+            </div>
+        </div>  
 
-            <div className="row" id="slot2" data-interval="false" data-ride="carousel">
-                <div class="slider">
-                    <div className =  "item one">
-                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item two">
-                        <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item three">
-                        <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item four">
-                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item five">
-                        <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
-                    </div>
+        <div className="col" id="slot2" data-interval="false" data-ride="carousel">
+            <div class="slider">
+                <div className =  "item one">
+                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
                 </div>
-            </div>  
+                <div className =  "item two">
+                    <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item three">
+                    <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item four">
+                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item five">
+                    <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                {/* <div className =  "item six">
+                    <img src = {pic6} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item seven">
+                    <img src = {pic7} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item eight">
+                    <img src = {pic8} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item nine">
+                    <img src = {pic9} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item ten">
+                    <img src = {pic10} alt = "errror" className = "d-block w-100"></img>
+                </div> */}
+            </div>
+        </div>  
 
-            <div className="row" id="slot3" data-interval="false" data-ride="carousel">
-                <div class="slider">
-                    <div className =  "item one">
-                        <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item two">
-                        <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item three">
-                        <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item four">
-                        <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
-                    </div>
-                    <div className =  "item five">
-                        <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
-                    </div>
+        <div className="col" id="slot3" data-interval="false" data-ride="carousel">
+            <div class="slider">
+                <div className =  "item one">
+                    <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
                 </div>
-            </div> 
+                <div className =  "item two">
+                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item three">
+                    <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item four">
+                    <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item five">
+                    <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                {/* <div className =  "item six">
+                    <img src = {pic6} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item seven">
+                    <img src = {pic7} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item eight">
+                    <img src = {pic8} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item nine">
+                    <img src = {pic9} alt = "errror" className = "d-block w-100"></img>
+                </div>
+                <div className =  "item ten">
+                    <img src = {pic10} alt = "errror" className = "d-block w-100"></img>
+                </div> */}
+            </div>
+        </div>  
         </div>
-        <div className="col-md-3">
-        <span className="lever-up" onClick={handleClick}>djafbdjasflasdbj</span>
+        <div className="row justify-content-center">
+        <span className="lever-up" onClick={handleClick}></span>
         </div>
     </div>
     
