@@ -29,39 +29,39 @@ class Navbar extends React.Component{
       showNav: false
     };
   }
-  componentDidMount() {
-    $('span').mousemove(function(e){
-      if($(this).attr('class') == "1"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      } else if($(this).attr('class') == "2"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      } else if($(this).attr('class') == "3"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      } else if($(this).attr('class') == "4"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      } else if($(this).attr('class') == "5"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      } else if($(this).attr('class') == "6"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      } else if($(this).attr('class') == "7"){
-        var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-        var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-        $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
-      }
-    })
-  }
+  // componentDidMount() {
+  //   $('span').mousemove(function(e){
+  //     if($(this).attr('class') == "1"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     } else if($(this).attr('class') == "2"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     } else if($(this).attr('class') == "3"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     } else if($(this).attr('class') == "4"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     } else if($(this).attr('class') == "5"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     } else if($(this).attr('class') == "6"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     } else if($(this).attr('class') == "7"){
+  //       var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+  //       var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+  //       $(this).css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(227,6,19,.8), '+rYP/8+'px '+rXP/60+'px rgba(255,237,0,1), '+rXP/70+'px '+rYP/12+'px rgba(0,159,227,.7)');
+  //     }
+  //   })
+  // }
   render(){
     return(
       <nav className = "tab">
@@ -93,51 +93,9 @@ class Navbar extends React.Component{
                     <span className="5"><a onClick = {() => this.setState({ isOpen: !this.state.isOpen})}>{NavbarData[4].title}</a></span>
                   </Link>
                 </li>
-                <li className = "tab">
-                  <Link to = {NavbarData[5].path} className = {NavbarData[5].cName} style = {{textDecoration: "none"}}>
-                    <span className="6">{NavbarData[5].title}</span>
-                  </Link>
-                </li>
-                <li className = "tab">
-                  <Link to = {NavbarData[6].path} className = {NavbarData[6].cName} style = {{textDecoration: "none"}}>
-                    <span className="7">{NavbarData[6].title}</span>
-                  </Link>
-                </li>
                 <SocialBar/>
           </ul>
           </div>
-          <Modal className = "emailPop" overlayClassName = "emailOverlay" isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})}>
-            <SignUp/>
-          </Modal>
-          <Modal className = "albumPop" overlayClassName = "albumOverlay" isOpen = {this.state.isOpen2} onRequestClose = {() => this.setState({isOpen2: !this.state.isOpen2})}>
-            <div className = "bold row pt-4 pb-3">
-              <h2>LISTEN ON:</h2>
-            </div>
-            <a className = "l1 row d-block" href = "https://open.spotify.com/album/2fjpmy9hTMQdm7z5AIjfH1?si=kulDq64HSBGRGEx5lq281w&nd=1">
-                <FontAwesomeIcon icon={faSpotify} size = "4x"/>
-                <h3 className = "t1 d-inline">SPOTIFY</h3>
-            </a>
-            <a className = "l2 row d-block" href = "https://music.apple.com/us/album/chroma-ep/1566164837?ls=1&app=music&at=11lEW&ct=xz1s2y">
-              <FontAwesomeIcon icon={faApple} size = "4x"/>
-              <h3 className = "t2 d-inline">APPLE</h3>
-            </a>
-            <a className = "l3 row d-block" href = "https://tidal.com/browse/album/183073999">
-              <FontAwesomeIcon icon={faDeezer} size = "4x"/>
-              <h3 className = "t3 d-inline">TIDAL</h3>
-            </a>
-            <a className = "l4 row d-block" href = "https://music.apple.com/us/album/chroma-ep/1566164837?ls=1&app=music&at=11lEW&ct=xz1s2y">
-              <FontAwesomeIcon icon={faItunesNote} size = "4x"/>
-              <h3 className = "t4 d-inline">ITUNES</h3>
-            </a>
-            <a className = "l5 row d-block" href = "https://music.amazon.com/albums/B0947DVT1M?marketplaceId=ATVPDKIKX0DER&tag=smarturl-pivot-20&musicTerritory=US&">
-              <FontAwesomeIcon icon={faAmazon} size = "4x"/>
-              <h3 className = "t5 d-inline">AMAZON</h3>
-            </a>
-            <a className = "l6 row d-block mb-3" href = "https://open.spotify.com/artist/6dZMYil8Wj3zvMFS5hoA8U">
-              <FontAwesomeIcon icon={faYoutube} size = "4x"/>
-              <h3 className = "t6 d-inline">YOUTUBE MUSIC</h3>
-            </a>
-          </Modal>
       </nav>
   );
 }

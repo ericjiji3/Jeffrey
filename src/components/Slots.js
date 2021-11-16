@@ -10,6 +10,9 @@ import pic7 from "./pics/lottery_pics/pic7.jpg";
 import pic8 from "./pics/lottery_pics/pic8.jpg";
 import pic9 from "./pics/lottery_pics/pic9.jpg";
 import pic10 from "./pics/lottery_pics/pic10.jpg";
+import face1 from "./pics/lottery_pics/face1.png";
+import face2 from "./pics/lottery_pics/face2.png";
+import face3 from "./pics/lottery_pics/face3.png";
 import lever from "./pics/leveranimation.png";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import {BiLeftArrowAlt, BiRightArrowAlt} from "react-icons/bi";
@@ -25,13 +28,13 @@ function Slots(props){
     
     function handleClick(e){
         e.preventDefault();
-        let randomValue1 = Math.floor(1 + Math.random()* 10);
+        let randomValue1 = Math.floor(1 + Math.random()* 5);
         let rv1 = randomValue1;
         console.log(randomValue1);
-        let randomValue2 = Math.floor(1 + Math.random()* 10);
+        let randomValue2 = Math.floor(1 + Math.random()* 5);
         console.log(randomValue2);
         let rv2 = randomValue2;
-        let randomValue3 = Math.floor(1 + Math.random()* 10);
+        let randomValue3 = Math.floor(1 + Math.random()* 5);
         console.log(randomValue3);
         let rv3 = randomValue3;
         $(".lever").css('pointer-events','none');
@@ -51,7 +54,7 @@ function Slots(props){
             if(randomValue1 >= randomValue2 && randomValue1 >= randomValue3){
                 console.log('slot1 slowest!')
             }
-            $('#slot1 .slider').css('transform','translate(-20%)');
+            $('#slot1 .slider').css('transform','translate(-33%)');
             $('#slot1 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
             
@@ -75,7 +78,7 @@ function Slots(props){
             if(randomValue2 >= randomValue1 && randomValue2 >= randomValue3){
                 console.log('slot2 slowest!')
             }
-            $('#slot2 .slider').css('transform','translate(-20%)');
+            $('#slot2 .slider').css('transform','translate(-33%)');
             $('#slot2 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
             
@@ -99,7 +102,7 @@ function Slots(props){
             if(randomValue3 >= randomValue2 && randomValue3 >= randomValue1){
                 console.log('slot3 slowest!')
             }
-            $('#slot3 .slider').css('transform','translate(-20%)');
+            $('#slot3 .slider').css('transform','translate(-33%)');
             $('#slot3 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
             
@@ -121,115 +124,55 @@ function Slots(props){
         console.log('after:' + locked);
     }
   return(
-    <div className="container row">
-        <div className="row">
-        <div className="col" id="slot1" data-interval="false" data-ride="carousel">
-            <div class="slider">
-                <div className =  "item one">
-                    <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
+    <div className="container slot-container">
+        <div className="slots row mx-auto">
+            <div className="col" id="slot1" data-interval="false" data-ride="carousel">
+                <div class="slider">
+                    <div className =  "item one">
+                        <img src = {face1} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+                    <div className =  "item two">
+                        <img src = {face2} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+                    <div className =  "item three">
+                        <img src = {face3} alt = "errror" className = "d-block w-50"></img>
+                    </div>
                 </div>
-                <div className =  "item two">
-                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item three">
-                    <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item four">
-                    <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item five">
-                    <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                {/* <div className =  "item six">
-                    <img src = {pic6} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item seven">
-                    <img src = {pic7} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item eight">
-                    <img src = {pic8} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item nine">
-                    <img src = {pic9} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item ten">
-                    <img src = {pic10} alt = "errror" className = "d-block w-100"></img>
-                </div> */}
-            </div>
-        </div>  
+            </div>  
 
-        <div className="col" id="slot2" data-interval="false" data-ride="carousel">
-            <div class="slider">
+            <div className="col" id="slot2" data-interval="false" data-ride="carousel">
+                <div class="slider">
                 <div className =  "item one">
-                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
+                        <img src = {face1} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+                    <div className =  "item two">
+                        <img src = {face2} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+                    <div className =  "item three">
+                        <img src = {face3} alt = "errror" className = "d-block w-50"></img>
+                    </div>
                 </div>
-                <div className =  "item two">
-                    <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item three">
-                    <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item four">
-                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item five">
-                    <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                {/* <div className =  "item six">
-                    <img src = {pic6} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item seven">
-                    <img src = {pic7} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item eight">
-                    <img src = {pic8} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item nine">
-                    <img src = {pic9} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item ten">
-                    <img src = {pic10} alt = "errror" className = "d-block w-100"></img>
-                </div> */}
-            </div>
-        </div>  
+            </div>  
 
-        <div className="col" id="slot3" data-interval="false" data-ride="carousel">
-            <div class="slider">
+            <div className="col" id="slot3" data-interval="false" data-ride="carousel">
+                <div class="slider">
                 <div className =  "item one">
-                    <img src = {pic4} alt = "errror" className = "d-block w-100"></img>
+                        <img src = {face1} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+                    <div className =  "item two">
+                        <img src = {face2} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+                    <div className =  "item three">
+                        <img src = {face3} alt = "errror" className = "d-block w-50"></img>
+                    </div>
+
                 </div>
-                <div className =  "item two">
-                    <img src = {pic2} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item three">
-                    <img src = {pic5} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item four">
-                    <img src = {pic1} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item five">
-                    <img src = {pic3} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                {/* <div className =  "item six">
-                    <img src = {pic6} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item seven">
-                    <img src = {pic7} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item eight">
-                    <img src = {pic8} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item nine">
-                    <img src = {pic9} alt = "errror" className = "d-block w-100"></img>
-                </div>
-                <div className =  "item ten">
-                    <img src = {pic10} alt = "errror" className = "d-block w-100"></img>
-                </div> */}
-            </div>
-        </div>  
+            </div>  
         </div>
         <div className="row justify-content-center">
-        <span className="lever-up" onClick={handleClick}></span>
+            <div className="button-container">
+                <span onClick={handleClick}>button</span>
+            </div>
         </div>
     </div>
     

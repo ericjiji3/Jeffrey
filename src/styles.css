@@ -9,7 +9,30 @@ body{
   /* background-color: rgb(230, 242, 255); */
   background: #FEFEFE 0% 0% no-repeat padding-box;
   opacity: 1;
+
 }
 .afterHeader{
   height: 700px;
+}
+.sticky{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  animation: 5s spin linear infinite;
+  border: 2px solid #DB3215;
+  box-shadow: 0 0px 10px 0px #FF6961;
+  padding: 10px 20px;
+  border-radius: 25%;
+  background-color: white;
+}
+
+@keyframes spin{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
 }

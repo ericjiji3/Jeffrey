@@ -1,9 +1,10 @@
 
 .head{
-  font-family: 'DaysOne', sans-serif;
-  text-indent: 1.25em;
-  letter-spacing: 1.25em;
-  color: #000000;
+  font-family: 'Coolvetica';
+  /* text-indent: 1.25em; */
+  letter-spacing: .2em;
+  -webkit-text-stroke: 1.5px #DB3215;
+  color: #FFFFFF;
   opacity: 1;
 }
 

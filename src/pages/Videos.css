@@ -1,16 +1,7 @@
-.asiam{
+.vid{
   width: 65%;
-  height: 50%;
-}
-.coffee{
-  width: 65%;
-  height: 50%;
-}
-.paint{
-  width: 65%;
-  height: 50%;
-}
-.trailer{
-  width: 65%;
-  height: 50%;
+  height: 450px;
+  margin: 15px 0;
+  padding: 0;
+  box-shadow: 0 0px 20px 0px #FF6961;
 }

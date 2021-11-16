@@ -9,31 +9,21 @@ export const NavbarData = [
     isEmail: false
   },
   {
-    title: "SOUNDS",
-    cName: "Projects",
-    isEmail: false
-  },
-  {
-    title: "VISUALS",
+    title: "VIDEOS",
     path: "/videos",
     cName: "Videos",
     isEmail: false
   },
   {
-    title: "BROWSE",
-    path: "/shop",
-    cName: "Shop",
+    title: "GALLERY",
+    path: "/gallery",
+    cName: "Gallery",
     isEmail: false
   },
   {
-    title: "REACH",
-    cName: "Email",
-    isEmail: true
-  },
-  {
-    title: "STAGES",
-    path: "/stages",
-    cName: "Email",
+    title: "PORTFOLIO",
+    path: "/portfolio",
+    cName: "Portfolio",
     isEmail: false
   },
   {

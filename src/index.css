@@ -26,3 +26,8 @@ code {
   font-family: 'SpaceMonoReg';
   src: local('DaysOne'), url(./Fonts/Space_Mono/SpaceMono-Regular.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: local('coolvetica'), url(./Fonts/coolvetica/coolvetica.ttf) format('truetype');
+}
