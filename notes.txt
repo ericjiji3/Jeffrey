@@ -1,0 +1,8 @@
+- tabs
+	- home
+	- video
+	- profile
+	- gallery
+	- portfolio/resume
+- sticky contact form
+	
