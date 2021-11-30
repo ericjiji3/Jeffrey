@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import styles from "./styles.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import About from './pages/About';
 import Videos from './pages/Videos';
 import Portfolio from './pages/Portfolio';
 import Gallery from './pages/Gallery';
+import Modal from "react-modal";
 import mail from './components/pics/mail.png';
 
 function App() {
@@ -28,9 +30,7 @@ function App() {
             <Route path = '/' exact component = {Home}/>
           </Switch>
       </Router>
-      <div>
-          <img className="sticky" src={mail} />
-      </div>
+      <Contact/>
       </div>
     </div>
   );

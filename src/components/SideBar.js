@@ -4,7 +4,6 @@ import {FaBars} from 'react-icons/fa';
 import {NavbarData} from "./NavbarData";
 import {Link} from "react-router-dom";
 import SocialBar from "./SocialBar";
-import SignUp from "./SignUp";
 import Modal from "react-modal";
 import styles from "./SideBar.css";
 

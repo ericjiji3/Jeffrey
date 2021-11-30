@@ -3,7 +3,6 @@ import {NavbarData} from "./NavbarData";
 import {Link} from "react-router-dom";
 import styles from "./Navbar.css";
 import SocialBar from "./SocialBar";
-import SignUp from "./SignUp";
 import Modal from "react-modal";
 import $ from 'jquery';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
