@@ -11,5 +11,8 @@
   font-size: 1em;
 }
 
+.contact-form .result .correct-hidden, .incorrect-hidden{
+  display: none;
+}
 /* form = border border-dark p-3 w-75 h-75
 h4 = emailHead text-center my-3 */
