@@ -2,13 +2,38 @@
     height: 50%;
     overflow: hidden; 
 } */
-.slot-container{
+.slots-result{
+    background-color: #972a27;
+    width: 50%;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.slots-result .result-text{
+    margin-bottom: 0;
+    color: #c99a1b;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+    }
+  }
+.slots{
     width: 75%;
     padding: 20px;
     margin: auto;
     background-color: #972a27;
-    border-radius: 10%;
+    border-radius: 20px;
     /* background-image: url("./pics/stone.jpg");
+    border-image-repeat: round;
     border-top: 15px solid #DAA520;
     border-bottom: 15px solid #DAA520;
     border-left: 30px solid #a01813;

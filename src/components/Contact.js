@@ -74,7 +74,7 @@ function Contact(){
             <img className="sticky" src={mail} onClick={toggle}/>
             <Modal isOpen={modal} toggle={toggle}>
             <ModalHeader toggle={toggle}>
-                Modal title
+                CONTACT 
             </ModalHeader>
             <ModalBody>
                <form className="contact-form" onSubmit={sendEmail}>
@@ -92,7 +92,7 @@ function Contact(){
                             <textarea className="form-control" placeholder="Your Message" name="message"></textarea>
                         </div>
                         <div className="col-8 text-center mx-auto">
-                            <input type="submit" className="btn btn-info mx-auto" value="Send Message"/>
+                            <input type="submit" className="btn btn-danger mx-auto" value="Send Message"/>
                         </div>
                     </div>
                     <div className='result row text-center pt-3'>

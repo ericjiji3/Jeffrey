@@ -125,6 +125,9 @@ function Slots(props){
     }
   return(
     <div className="container slot-container">
+        <div className="slots-result row mx-auto">
+            <h1 className="result-text">JACKPOT</h1>
+        </div>
         <div className="slots row mx-auto">
             <div className="col" id="slot1" data-interval="false" data-ride="carousel">
                 <div class="slider">

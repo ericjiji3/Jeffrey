@@ -5,14 +5,35 @@
   color: #1F1F1F;
   opacity: 1;
 }
-
 .labels{
   font-family: 'SpaceMonoReg', monospace;
   font-size: 1em;
 }
+.modal-content{
+  border: 1px solid #DB3215;
+}
+.modal-header{
+  border-bottom: 1px solid #DB3215;
+}
+.modal-title{
+  font-family: 'Coolvetica';
+  letter-spacing: .2em;
+  -webkit-text-stroke: 1.5px #DB3215;
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 1.5em;
+}
 
 .contact-form .result .correct-hidden, .incorrect-hidden{
   display: none;
+}
+.correct-visible, .incorrect-visible{
+  font-family: 'Coolvetica';
+  /* letter-spacing: .2em; */
+  -webkit-text-stroke: 1px #DB3215;
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 1.5em;
 }
 /* form = border border-dark p-3 w-75 h-75
 h4 = emailHead text-center my-3 */
