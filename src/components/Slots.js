@@ -13,7 +13,7 @@ import pic10 from "./pics/lottery_pics/pic10.jpg";
 import face1 from "./pics/lottery_pics/face1.png";
 import face2 from "./pics/lottery_pics/face2.png";
 import face3 from "./pics/lottery_pics/face3.png";
-import lever from "./pics/leveranimation.png";
+import star from "./pics/stars.png";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import {BiLeftArrowAlt, BiRightArrowAlt} from "react-icons/bi";
 import {TiArrowLeftOutline, TiArrowRightOutline} from "react-icons/ti";
@@ -52,7 +52,6 @@ function Slots(props){
 
         var interval1 = window.setInterval(function(){
             if(randomValue1 >= randomValue2 && randomValue1 >= randomValue3){
-                console.log('slot1 slowest!')
             }
             $('#slot1 .slider').css('transform','translate(-33%)');
             $('#slot1 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
@@ -76,7 +75,6 @@ function Slots(props){
 
         var interval2 = window.setInterval(function(){
             if(randomValue2 >= randomValue1 && randomValue2 >= randomValue3){
-                console.log('slot2 slowest!')
             }
             $('#slot2 .slider').css('transform','translate(-33%)');
             $('#slot2 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
@@ -100,7 +98,6 @@ function Slots(props){
 
         var interval3 = window.setInterval(function(){
             if(randomValue3 >= randomValue2 && randomValue3 >= randomValue1){
-                console.log('slot3 slowest!')
             }
             $('#slot3 .slider').css('transform','translate(-33%)');
             $('#slot3 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
@@ -121,12 +118,18 @@ function Slots(props){
                 window.clearInterval(interval3);
             }
         },350);
-        console.log('after:' + locked);
+        // console.log($('.'))
     }
   return(
     <div className="container slot-container">
-        <div className="slots-result row mx-auto">
-            <h1 className="result-text">JACKPOT</h1>
+        <div className="slots-header-container row mx-auto">
+            <div className="slot-header">
+                <img className="star" src={star}></img>
+                <img className="star" src={star}></img>
+                <img className="star" src={star}></img>
+                <img className="star" src={star}></img>
+                <img className="star" src={star}></img>
+            </div>
         </div>
         <div className="slots row mx-auto">
             <div className="col" id="slot1" data-interval="false" data-ride="carousel">
@@ -172,9 +175,9 @@ function Slots(props){
                 </div>
             </div>  
         </div>
-        <div className="row justify-content-center">
-            <div className="button-container">
-                <span onClick={handleClick}>button</span>
+        <div className="slots-result row justify-content-center">
+            <div className="custom-button" onClick={handleClick}>
+                
             </div>
         </div>
     </div>

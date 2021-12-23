@@ -1,7 +1,6 @@
 import React from "react"
 import Navbar from "../components/Navbar.js";
 import styles from "./Gallery.css";
-import trailer from "../components/pics/trailer.MOV";
 
 function Gallery(){
   return(
