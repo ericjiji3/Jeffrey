@@ -24,19 +24,47 @@ function Slots(props){
     const [current1, setCurrent1] = useState(0);
     const [up, setUp] = useState(true);
     const [locked, setLocked] = useState(false);
-    
-    
+    var result1 = 1;
+    var result2 = 1;
+    var result3 = 1;
+
+    function slotResult(rv1, rv2, rv3){
+        console.log('result');
+        result1 += rv1;
+        console.log(result1);
+        // console.log($('#slot1').position());
+        // console.log($('#slot1 .slider .item.one img').position().left);
+        // console.log($('#slot1 .slider .item.two img').position().left);
+        // console.log($('#slot1 .slider .item.three img').position().left);
+        
+    }
     function handleClick(e){
         e.preventDefault();
-        let randomValue1 = Math.floor(1 + Math.random()* 5);
+        let randomValue1 = Math.floor(1 + Math.random()* 3);
         let rv1 = randomValue1;
-        console.log(randomValue1);
-        let randomValue2 = Math.floor(1 + Math.random()* 5);
-        console.log(randomValue2);
+        // console.log(randomValue1);
+        let randomValue2 = Math.floor(1 + Math.random()* 3);
+        // console.log(randomValue2);
         let rv2 = randomValue2;
-        let randomValue3 = Math.floor(1 + Math.random()* 5);
-        console.log(randomValue3);
+        let randomValue3 = Math.floor(1 + Math.random()* 3);
+        // console.log(randomValue3);
         let rv3 = randomValue3;
+        console.log(rv1, rv2, rv3)
+        result1 += rv1;
+        if(result1 > 3){
+            result1 -= 3;
+        }
+        result2 += rv2;
+        if(result2 > 3){
+            result2 -= 3;
+        }
+        result3 += rv3;
+        if(result3 > 3){
+            result3 -= 3;
+        }
+        
+        console.log(result1, result2, result3);
+
         $(".lever").css('pointer-events','none');
 
         if(up){
@@ -51,8 +79,6 @@ function Slots(props){
         $(".lever").css('pointer-events','auto');
 
         var interval1 = window.setInterval(function(){
-            if(randomValue1 >= randomValue2 && randomValue1 >= randomValue3){
-            }
             $('#slot1 .slider').css('transform','translate(-33%)');
             $('#slot1 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
@@ -67,6 +93,9 @@ function Slots(props){
                 if(rv1 >= rv2 && rv1 >= rv3){
                     $(".lever-down").attr('class', 'lever-up');
                     $(".lever-up").css('pointer-events', 'auto');
+                    if(result1 == result2 == result3){
+                        console.log('match');
+                    }
                     setUp(true)
                 }
                 window.clearInterval(interval1);
@@ -74,8 +103,6 @@ function Slots(props){
         },350);
 
         var interval2 = window.setInterval(function(){
-            if(randomValue2 >= randomValue1 && randomValue2 >= randomValue3){
-            }
             $('#slot2 .slider').css('transform','translate(-33%)');
             $('#slot2 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
@@ -90,6 +117,9 @@ function Slots(props){
                 if(rv2 >= rv1 && rv2 >= rv3){
                     $(".lever-down").attr('class', 'lever-up');
                     $(".lever-up").css('pointer-events', 'auto');
+                    if(result1 == result2 == result3){
+                        console.log('match');
+                    }
                     setUp(true)
                 }
                 window.clearInterval(interval2);
@@ -97,8 +127,6 @@ function Slots(props){
         },350);
 
         var interval3 = window.setInterval(function(){
-            if(randomValue3 >= randomValue2 && randomValue3 >= randomValue1){
-            }
             $('#slot3 .slider').css('transform','translate(-33%)');
             $('#slot3 .slider').one('transitionend webkitTransitionEnd MSTransitionEnd', function(){
                 $(this).append($(this).children().first());
@@ -113,12 +141,14 @@ function Slots(props){
                 if(rv3 >= rv2 && rv3 >= rv1){
                     $(".lever-down").attr('class', 'lever-up');
                     $(".lever-up").css('pointer-events', 'auto');
+                    if(result1 == result2 == result3){
+                        console.log('match');
+                    }
                     setUp(true)
                 }
                 window.clearInterval(interval3);
             }
         },350);
-        // console.log($('.'))
     }
   return(
     <div className="container slot-container">
@@ -135,13 +165,13 @@ function Slots(props){
             <div className="col" id="slot1" data-interval="false" data-ride="carousel">
                 <div class="slider">
                     <div className =  "item one">
-                        <img src = {face1} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face1} alt = "errror" className = "f1 d-block w-50"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {face2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face2} alt = "errror" className = "f2 d-block w-50"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {face3} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face3} alt = "errror" className = "f3 d-block w-50"></img>
                     </div>
                 </div>
             </div>  
@@ -149,13 +179,13 @@ function Slots(props){
             <div className="col" id="slot2" data-interval="false" data-ride="carousel">
                 <div class="slider">
                 <div className =  "item one">
-                        <img src = {face1} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face1} alt = "errror" className = "f1 d-block w-50"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {face2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face2} alt = "errror" className = "f2 d-block w-50"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {face3} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face3} alt = "errror" className = "f3 d-block w-50"></img>
                     </div>
                 </div>
             </div>  
@@ -163,13 +193,13 @@ function Slots(props){
             <div className="col" id="slot3" data-interval="false" data-ride="carousel">
                 <div class="slider">
                 <div className =  "item one">
-                        <img src = {face1} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face1} alt = "errror" className = "f1 d-block w-50"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {face2} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face2} alt = "errror" className = "f2 d-block w-50"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {face3} alt = "errror" className = "d-block w-50"></img>
+                        <img src = {face3} alt = "errror" className = "f3 d-block w-50"></img>
                     </div>
 
                 </div>
