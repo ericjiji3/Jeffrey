@@ -21,7 +21,7 @@ export const NavbarData = [
     isEmail: false
   },
   {
-    title: "PORTFOLIO",
+    title: "WRITINGS",
     path: "/portfolio",
     cName: "Portfolio",
     isEmail: false

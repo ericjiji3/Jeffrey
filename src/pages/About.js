@@ -12,7 +12,7 @@ import {
   faYoutube,
   faDeezer
 } from "@fortawesome/free-brands-svg-icons";
-import pic1 from "../components/pics/pic1.jpg";
+import headshot from "../components/pics/headshot.jfif";
 
 class About extends React.Component{
   constructor(props){
@@ -28,13 +28,21 @@ class About extends React.Component{
           <Navbar/>
         </div>
       <div className = "row mb-5 justify-content-center">
-        <div className = "col-md-3 mt-3">
-          <img className = "about" src = {pic1}></img>
+        <div className = "col-md-3">
+          <img className = "about" src = {headshot}></img>
         </div>
         <div className = "col-md-5">
-          <span className = "text">
-            For Jordon, music is more than a collection of notes, it's an experience. As a child, Jordon’s love for music began in car rides with his father. Whether it was R&B/Soul icons Marvin Gaye and Sade or rock moguls Fleetwood Mac and Pink Floyd, Jordon was beginning to develop a colorful palette that would influence his musical creations. As an adolescent, artists Drake, Kid Cudi, and J. Cole helped to propel Jordon’s interest in Hip-Hop. Writing raps on notebook paper in the back of the bus, a thirteen year old Jordon's love deepened as he rediscovered music as an expression of himself. Everyday after soccer practice, Jordon could be found learning the art of production as he experimented with recording setups and music. At eighteen, Jordon had already gained a strong affinity for performing his music live. Showcasing his talents in multiple cities across Texas, his stage presence cultivated him a small but loyal following. Now Jordon's passion continues to grow with each project he creates. Jordon, reigning from Houston, Texas, dropped his new EP CHROMA on June 4th, 2021.
-          </span><br/><br/>
+          <div className = "text">
+            <span>Hello, my name is Jeffrey.</span>
+            <br/><br/>
+            <span>I am a recent graduate from the University of Texas at Austin.</span>
+            <br/><br/>
+            <span>While developing my business acumen under the McCombs School of Business, I was also a student of comedy. In my free time, I was practicing improv, live sketches, and recorded skits. Comedy was the primary vehicle in which I have developed my skills as a writer.</span>
+            <br/><br/>
+            <span>Since graduating, I have headlined two sold-out (200+) stand-up comedy shows in Austin and Houston. These shows have sharpened my creative & managerial skills for a creative advertising career.</span>
+            <br/><br/>
+            <span>Please view my resume for more information.</span>
+          </div><br/><br/>
           <button className = "but" type = "button" onClick = {() => this.setState({isOpen: !this.state.isOpen})}>LISTEN NOW</button>
         </div>
         <Modal className = "aboutPop" overlayClassName = "aboutOverlay" isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})}>

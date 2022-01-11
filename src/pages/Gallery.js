@@ -39,11 +39,29 @@ import pic35 from "../components/pics/down_worse/35.JPG";
 import pic36 from "../components/pics/down_worse/36.JPG";
 import pic37 from "../components/pics/down_worse/37.JPG";
 import pic38 from "../components/pics/down_worse/38.JPG";
+
+import badp1 from "../components/pics/down_bad/1.JPG";
+import badp2 from "../components/pics/down_bad/2.JPG";
+import badp3 from "../components/pics/down_bad/3.JPG";
+import badp4 from "../components/pics/down_bad/4.JPG";
+import badp5 from "../components/pics/down_bad/5.JPG";
+import badp6 from "../components/pics/down_bad/6.JPG";
+import badp7 from "../components/pics/down_bad/7.JPG";
+import badp8 from "../components/pics/down_bad/8.JPG";
+import badp9 from "../components/pics/down_bad/9.JPG";
+import badp10 from "../components/pics/down_bad/10.JPG";
+import badp11 from "../components/pics/down_bad/11.JPG";
+import badp12 from "../components/pics/down_bad/12.JPG";
+import badp13 from "../components/pics/down_bad/13.JPG";
+import badp14 from "../components/pics/down_bad/14.JPG";
+import badp15 from "../components/pics/down_bad/15.JPG";
+import badp16 from "../components/pics/down_bad/16.JPG";
+import badp17 from "../components/pics/down_bad/17.JPG";
+import badp18 from "../components/pics/down_bad/18.JPG";
+import badp19 from "../components/pics/down_bad/19.JPG";
 import styles from "./Gallery.css";
 
 function Gallery(){
-  const child   = { width: `300em`, height: `100%`}
-  const parent  = { width: `60em`, height: `100%`}
 
   return(
     <div>
@@ -51,121 +69,185 @@ function Gallery(){
           <Navbar/>
         </div>
         <div className="down-bad">
-        <h1 className="header-down-bad text-center">Down Bad</h1>
-        <HorizontalScroll className="db-scroll">
+          <h1 className="header-down-bad text-center">Down Bad</h1>
+          <HorizontalScroll className="db-scroll mb-5">
+            <div className="main bg">
+            <img className="db-pic" src={badp1}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp2}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp3}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp4}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp5}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp6}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp7}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp8}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp9}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp10}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp11}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp12}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp13}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp14}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp15}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp16}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp17}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp18}></img>
+            </div>
+            <div className="main bg">
+            <img className="db-pic" src={badp19}></img>
+            </div>
+          </HorizontalScroll>
+        </div>
+        
+       
+        <div className="down-worse">
+        <h1 className="header-down-worse text-center">Down Worse</h1>
+        <HorizontalScroll className="dw-scroll">
           <div className="main bg">
-            <img className="db-pic" src={pic1}></img>
+            <img className="dw-pic" src={pic1}></img>
           </div>
           <div className="main bg2">
-            <img className="db-pic" src={pic2}></img>
+            <img className="dw-pic" src={pic2}></img>
           </div>
           <div className="main bg3">
-            <img className="db-pic" src={pic3}></img>
+            <img className="dw-pic" src={pic3}></img>
           </div>
           <div className="main bg4">
-            <img className="db-pic" src={pic4}></img>
+            <img className="dw-pic" src={pic4}></img>
           </div>
           <div className="main bg5">
-            <img className="db-pic" src={pic5}></img>
+            <img className="dw-pic" src={pic5}></img>
           </div>
           <div className="main bg6">
-            <img className="db-pic" src={pic6}></img>
+            <img className="dw-pic" src={pic6}></img>
           </div>
           <div className="main bg7">
-            <img className="db-pic" src={pic7}></img>
+            <img className="dw-pic" src={pic7}></img>
           </div>
           <div className="main bg8">
-            <img className="db-pic" src={pic8}></img>
+            <img className="dw-pic" src={pic8}></img>
           </div>
           <div className="main bg9">
-            <img className="db-pic" src={pic9}></img>
+            <img className="dw-pic" src={pic9}></img>
           </div>
           <div className="main bg10">
-            <img className="db-pic" src={pic10}></img>
+            <img className="dw-pic" src={pic10}></img>
           </div>
           <div className="main bg11">
-            <img className="db-pic" src={pic11}></img>
+            <img className="dw-pic" src={pic11}></img>
           </div>
           <div className="main bg12">
-            <img className="db-pic" src={pic12}></img>
+            <img className="dw-pic" src={pic12}></img>
           </div>
           <div className="main bg13">
-            <img className="db-pic" src={pic13}></img>
+            <img className="dw-pic" src={pic13}></img>
           </div>
           <div className="main bg14">
-            <img className="db-pic" src={pic14}></img>
+            <img className="dw-pic" src={pic14}></img>
           </div>
           <div className="main bg15">
-            <img className="db-pic" src={pic15}></img>
+            <img className="dw-pic" src={pic15}></img>
           </div>
           <div className="main bg16">
-            <img className="db-pic" src={pic16}></img>
+            <img className="dw-pic" src={pic16}></img>
           </div>
           <div className="main bg17">
-            <img className="db-pic" src={pic17}></img>
+            <img className="dw-pic" src={pic17}></img>
           </div>
           <div className="main bg18">
-            <img className="db-pic" src={pic18}></img>
+            <img className="dw-pic" src={pic18}></img>
           </div>
           <div className="main bg19">
-            <img className="db-pic" src={pic19}></img>
+            <img className="dw-pic" src={pic19}></img>
           </div>
           <div className="main bg20">
-            <img className="db-pic" src={pic20}></img>
+            <img className="dw-pic" src={pic20}></img>
           </div>
           <div className="main bg21">
-            <img className="db-pic" src={pic21}></img>
+            <img className="dw-pic" src={pic21}></img>
           </div>
           <div className="main bg22">
-            <img className="db-pic" src={pic22}></img>
+            <img className="dw-pic" src={pic22}></img>
           </div>
           <div className="main bg23">
-            <img className="db-pic" src={pic23}></img>
+            <img className="dw-pic" src={pic23}></img>
           </div>
           <div className="main bg24">
-            <img className="db-pic" src={pic24}></img>
+            <img className="dw-pic" src={pic24}></img>
           </div>
           <div className="main bg25">
-            <img className="db-pic" src={pic25}></img>
+            <img className="dw-pic" src={pic25}></img>
           </div>
           <div className="main bg26">
-            <img className="db-pic" src={pic26}></img>
+            <img className="dw-pic" src={pic26}></img>
           </div>
           <div className="main bg27">
-            <img className="db-pic" src={pic27}></img>
+            <img className="dw-pic" src={pic27}></img>
           </div>
           <div className="main bg28">
-            <img className="db-pic" src={pic28}></img>
+            <img className="dw-pic" src={pic28}></img>
           </div>
           <div className="main bg29">
-            <img className="db-pic" src={pic29}></img>
+            <img className="dw-pic" src={pic29}></img>
           </div>
           <div className="main bg30">
-            <img className="db-pic" src={pic30}></img>
+            <img className="dw-pic" src={pic30}></img>
           </div>
           <div className="main bg31">
-            <img className="db-pic" src={pic31}></img>
+            <img className="dw-pic" src={pic31}></img>
           </div>
           <div className="main bg32">
-            <img className="db-pic" src={pic32}></img>
+            <img className="dw-pic" src={pic32}></img>
           </div>
           <div className="main bg33">
-            <img className="db-pic" src={pic33}></img>
+            <img className="dw-pic" src={pic33}></img>
           </div>
           <div className="main bg34">
-            <img className="db-pic" src={pic34}></img>
+            <img className="dw-pic" src={pic34}></img>
           </div>
           <div className="main bg35">
-            <img className="db-pic" src={pic35}></img>
+            <img className="dw-pic" src={pic35}></img>
           </div>
           <div className="main bg36">
-            <img className="db-pic" src={pic36}></img>
+            <img className="dw-pic" src={pic36}></img>
           </div>
           <div className="main bg37">
-            <img className="db-pic" src={pic37}></img>
+            <img className="dw-pic" src={pic37}></img>
           </div>
           <div className="main bg38">
-            <img className="db-pic" src={pic38}></img>
+            <img className="dw-pic" src={pic38}></img>
           </div>
         </HorizontalScroll>
         </div>
