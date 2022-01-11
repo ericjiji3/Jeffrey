@@ -43,7 +43,7 @@ class About extends React.Component{
             <br/><br/>
             <span>Please view my resume for more information.</span>
           </div><br/><br/>
-          <button className = "but" type = "button" onClick = {() => this.setState({isOpen: !this.state.isOpen})}>LISTEN NOW</button>
+          <button className = "but" type = "button" onClick = {() => this.setState({isOpen: !this.state.isOpen})}>RESUME</button>
         </div>
         <Modal className = "aboutPop" overlayClassName = "aboutOverlay" isOpen = {this.state.isOpen} onRequestClose = {() => this.setState({isOpen: !this.state.isOpen})}>
           <div className = "bold row pt-4 pb-3">

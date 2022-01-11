@@ -40,30 +40,31 @@ function Slots(props){
     }
     function handleClick(e){
         e.preventDefault();
-        let randomValue1 = Math.floor(1 + Math.random()* 3);
+        let finished = false;
+        let randomValue1 = Math.floor(1 + Math.random()* 5);
         let rv1 = randomValue1;
         // console.log(randomValue1);
-        let randomValue2 = Math.floor(1 + Math.random()* 3);
+        let randomValue2 = Math.floor(1 + Math.random()* 5);
         // console.log(randomValue2);
         let rv2 = randomValue2;
-        let randomValue3 = Math.floor(1 + Math.random()* 3);
+        let randomValue3 = Math.floor(1 + Math.random()* 5);
         // console.log(randomValue3);
         let rv3 = randomValue3;
         console.log(rv1, rv2, rv3)
-        result1 += rv1;
-        if(result1 > 3){
-            result1 -= 3;
-        }
-        result2 += rv2;
-        if(result2 > 3){
-            result2 -= 3;
-        }
-        result3 += rv3;
-        if(result3 > 3){
-            result3 -= 3;
-        }
+        // result1 += rv1;
+        // if(result1 > 3){
+        //     result1 -= 3;
+        // }
+        // result2 += rv2;
+        // if(result2 > 3){
+        //     result2 -= 3;
+        // }
+        // result3 += rv3;
+        // if(result3 > 3){
+        //     result3 -= 3;
+        // }
         
-        console.log(result1, result2, result3);
+        // console.log(result1, result2, result3);
 
         $(".lever").css('pointer-events','none');
 
@@ -72,6 +73,9 @@ function Slots(props){
             $(".lever-down").css('pointer-events', 'none');
             setUp(false)
         } else{
+            console.log($('#slot1 .slider').find(">:first-child"));
+            console.log($('#slot2 .slider').find(">:first-child"));
+            console.log($('#slot3 .slider').find(">:first-child"));
             $(".lever-down").attr('class', 'lever-up');
             setUp(true)
         }
@@ -93,14 +97,17 @@ function Slots(props){
                 if(rv1 >= rv2 && rv1 >= rv3){
                     $(".lever-down").attr('class', 'lever-up');
                     $(".lever-up").css('pointer-events', 'auto');
-                    if(result1 == result2 == result3){
+                    
+                    if(rv1 == rv2 == rv3){
                         console.log('match');
                     }
                     setUp(true)
                 }
+                
                 window.clearInterval(interval1);
             }
         },350);
+        console.log('interval1 ' + interval1);
 
         var interval2 = window.setInterval(function(){
             $('#slot2 .slider').css('transform','translate(-33%)');
@@ -117,7 +124,8 @@ function Slots(props){
                 if(rv2 >= rv1 && rv2 >= rv3){
                     $(".lever-down").attr('class', 'lever-up');
                     $(".lever-up").css('pointer-events', 'auto');
-                    if(result1 == result2 == result3){
+                    
+                    if(rv1 == rv2 == rv3){
                         console.log('match');
                     }
                     setUp(true)
@@ -125,6 +133,7 @@ function Slots(props){
                 window.clearInterval(interval2);
             }
         },350);
+        console.log('interval2 ' + interval2);
 
         var interval3 = window.setInterval(function(){
             $('#slot3 .slider').css('transform','translate(-33%)');
@@ -141,14 +150,20 @@ function Slots(props){
                 if(rv3 >= rv2 && rv3 >= rv1){
                     $(".lever-down").attr('class', 'lever-up');
                     $(".lever-up").css('pointer-events', 'auto');
-                    if(result1 == result2 == result3){
+                    
+                    if(rv1 == rv2 == rv3){
                         console.log('match');
-                    }
+                    } 
                     setUp(true)
                 }
                 window.clearInterval(interval3);
             }
         },350);
+        console.log('interval3 ' + interval3);
+        // if (finished == true){
+        //     console.log('finish');
+        //     finished = false;
+        // }
     }
   return(
     <div className="container slot-container">

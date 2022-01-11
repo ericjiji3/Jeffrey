@@ -68,9 +68,9 @@ function Gallery(){
         <div className = "row justify-content-center" style={{marginLeft: "0vw", marginRight: "0vw"}}>
           <Navbar/>
         </div>
+        <h1 className="header-down-bad text-center">Down Bad</h1>
         <div className="down-bad">
-          <h1 className="header-down-bad text-center">Down Bad</h1>
-          <HorizontalScroll className="db-scroll mb-5">
+          <HorizontalScroll className="db-scroll">
             <div className="main bg">
             <img className="db-pic" src={badp1}></img>
             </div>
@@ -131,9 +131,9 @@ function Gallery(){
           </HorizontalScroll>
         </div>
         
-       
-        <div className="down-worse">
         <h1 className="header-down-worse text-center">Down Worse</h1>
+        <div className="down-worse">
+        
         <HorizontalScroll className="dw-scroll">
           <div className="main bg">
             <img className="dw-pic" src={pic1}></img>
@@ -251,7 +251,9 @@ function Gallery(){
           </div>
         </HorizontalScroll>
         </div>
-        
+        <div className="row">
+          <span>hello</span>
+        </div>
         
         
     </div>

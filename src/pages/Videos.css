@@ -5,3 +5,12 @@
   padding: 0;
   box-shadow: 0 0px 20px 0px #FF6961;
 }
+.video-header{
+  font-family: 'Coolvetica';
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+    padding: 20px 20px;
+    color: #FFFFFF;
+  -webkit-text-stroke: 1.5px #DB3215;
+}
