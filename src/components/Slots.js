@@ -1,15 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {SlideData} from "./SlideData";
-import pic1 from "./pics/lottery_pics/pic1.jpg";
-import pic2 from "./pics/lottery_pics/pic2.jpg";
-import pic3 from "./pics/lottery_pics/pic3.jpg";
-import pic4 from "./pics/lottery_pics/pic4.jpg";
-import pic5 from "./pics/lottery_pics/pic5.JPEG";
-import pic6 from "./pics/lottery_pics/pic6.JPEG";
-import pic7 from "./pics/lottery_pics/pic7.jpg";
-import pic8 from "./pics/lottery_pics/pic8.jpg";
-import pic9 from "./pics/lottery_pics/pic9.jpg";
-import pic10 from "./pics/lottery_pics/pic10.jpg";
 import face1 from "./pics/lottery_pics/face1.png";
 import face2 from "./pics/lottery_pics/face2.png";
 import face3 from "./pics/lottery_pics/face3.png";
