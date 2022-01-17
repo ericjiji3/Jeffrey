@@ -5,8 +5,6 @@ import AlbumPic from "./AlbumPic";
 import Press from "./Press";
 import Navbar from "./Navbar";
 import styles from "./Home.css";
-
-import pic6 from "./pics/pic6.png";
 import { Button } from 'reactstrap';
 import { Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap';
 import Contact from "./Contact";
