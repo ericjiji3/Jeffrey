@@ -20,9 +20,7 @@
     width: 50vw;
     /* height: 50vh; */
     margin: auto;
-    background: #000; 
 	position: relative;
-	border-top: 3px solid #888; 
 	/* margin: 5%; */
 	padding: 2% 2% 4% 2%; 
 	border-radius: 10px; 
@@ -30,21 +28,9 @@
 	border-bottom-right-radius: 50% 2%; 
 	transition: margin-right 1s;
 }
-.down-bad:after{
-    content: '';
-	display: block;
-	position: absolute;
-	bottom: 3%;
-	left: 36%;
-	height: .5%; 
-	width: 28%;
-	background: #ddd; 
-	border-radius: 50%; 
-	box-shadow: 0 0 3px 0 white; 
-}
+
 .db-scroll{
     position: relative;
-    background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px);
     background-position: center;
     animation: back 5s linear infinite;
 	background-size: cover; 
@@ -53,14 +39,6 @@
 	padding-bottom: 56.25%; 
 	position: relative;
 	overflow: hidden;
-}
-@keyframes back {
-    from {
-    background-size: 100% 100%;
-  }
-  to {
-    background-size: 200% 200%;
-  }
 }
 .down-bad .main{
     width: 50vw;
@@ -73,31 +51,6 @@
     max-width:100%;
     max-height:100%;
 }
-@media all and (min-width: 960px) {
-	.down-bad, .down-worse {
-		-webkit-animation: tvflicker 1s infinite alternate; 
-		-moz-animation:    tvflicker 1s infinite alternate; 
-		-o-animation:      tvflicker 1s infinite alternate; 
-		animation:         tvflicker 1s infinite alternate; 
-	}
-
-	@-webkit-keyframes tvflicker {
-        0%   { box-shadow: 0 0 60px 0 rgba(130, 136, 148, 0.8); }
-        100% { box-shadow: 0 0 20px 0 rgba(130, 136, 148, 1); }
-	}
-	@-moz-keyframes tvflicker {
-        0%   { box-shadow: 0 0 60px 0 rgba(130, 136, 148, 0.8); }
-        100% { box-shadow: 0 0 20px 0 rgba(130, 136, 148, 1); }
-	}
-	@-o-keyframes tvflicker {
-        0%   { box-shadow: 0 0 60px 0 rgba(130, 136, 148, 0.8); }
-        100% { box-shadow: 0 0 20px 0 rgba(130, 136, 148, 1); }
-	}
-	@keyframes tvflicker {
-	  0%   { box-shadow: 0 0 60px 0 rgba(130, 136, 148, 0.8); }
-	  100% { box-shadow: 0 0 20px 0 rgba(130, 136, 148, 1); }
-	}
-}
 
 
 
@@ -105,9 +58,7 @@
     width: 50vw;
     /* height: 50vh; */
     margin: auto;
-    background: #000; 
 	position: relative;
-	border-top: 3px solid #888; 
 	/* margin: 5%; */
 	padding: 2% 2% 4% 2%; 
 	border-radius: 10px; 
@@ -116,28 +67,13 @@
 	transition: margin-right 1s;
     
 }
-.down-worse:after{
-    content: '';
-	display: block;
-	position: absolute;
-	bottom: 3%;
-	left: 36%;
-	height: .5%; 
-	width: 28%;
-	background: #ddd; 
-	border-radius: 50%; 
-	box-shadow: 0 0 3px 0 white; 
-}
 /* .dw-scroll{
     background-color: #DB3215;
     box-shadow: 0 0px 20px 0px #FF6961;
 } */
 .dw-scroll{
     position: relative;
-    background-color: #777;
-    background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px);
     background-position: center;
-    animation: back 5s linear infinite;
 	background-size: cover; 
 	/* background-position: top center; */
 	height: 0; 
