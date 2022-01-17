@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Slots from "./Slots";
 import {SlideData} from "./SlideData";
 import AlbumPic from "./AlbumPic";
-import Press from "./Press";
 import Navbar from "./Navbar";
 import styles from "./Home.css";
 import { Button } from 'reactstrap';

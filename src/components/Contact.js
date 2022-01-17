@@ -3,7 +3,6 @@ import Slots from "./Slots";
 import { Button, Modal, ModalBody, ModalHeader, ModalFooter} from 'reactstrap';
 import {SlideData} from "./SlideData";
 import AlbumPic from "./AlbumPic";
-import Press from "./Press";
 import Navbar from "./Navbar";
 import mail from './pics/mail.png';
 import styles from "./Contact.css";
