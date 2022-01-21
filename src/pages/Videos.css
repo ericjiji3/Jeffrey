@@ -1,9 +1,8 @@
 .vid{
-  
+  width: 309px;
   height: 550px;
   margin: 15px 0;
   padding: 0;
-  box-shadow: 0 0px 20px 0px #FF6961;
 }
 .video-subject-header{
   font-family: 'Coolvetica';
@@ -14,7 +13,15 @@
     text-align: center;
     letter-spacing: 0px;
     opacity: 1;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     color: #FFFFFF;
   -webkit-text-stroke: 1.5px #DB3215;
+}
+@media(max-width: 850px){
+  .video-subject-header{
+    text-align: center!important;
+    margin: 10px 0!important;
+    font-size: 2.5em!important;
+  }
+
 }

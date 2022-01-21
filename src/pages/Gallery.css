@@ -19,14 +19,14 @@
 .down-bad{
     width: 50vw;
     /* height: 50vh; */
+    box-shadow: 0 0px 20px 0px #FF6961;
     margin: auto;
 	position: relative;
 	/* margin: 5%; */
 	padding: 2% 2% 4% 2%; 
 	border-radius: 10px; 
-	border-bottom-left-radius: 50% 2%; 
-	border-bottom-right-radius: 50% 2%; 
 	transition: margin-right 1s;
+    margin-bottom: 50px;
 }
 
 .db-scroll{
@@ -56,15 +56,15 @@
 
 .down-worse{
     width: 50vw;
+    box-shadow: 0 0px 20px 0px #FF6961;
     /* height: 50vh; */
     margin: auto;
 	position: relative;
 	/* margin: 5%; */
 	padding: 2% 2% 4% 2%; 
 	border-radius: 10px; 
-	border-bottom-left-radius: 50% 2%; 
-	border-bottom-right-radius: 50% 2%; 
 	transition: margin-right 1s;
+    margin-bottom: 50px;
     
 }
 /* .dw-scroll{
@@ -93,4 +93,8 @@
     max-width:100%;
     max-height:100%;
 }
-
+.gallery{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 50px;
+}

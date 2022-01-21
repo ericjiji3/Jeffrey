@@ -170,13 +170,13 @@ function Slots(props){
             <div className="col" id="slot1" data-interval="false" data-ride="carousel">
                 <div class="slider">
                     <div className =  "item one">
-                        <img src = {face1} alt = "errror" className = "f1 d-block w-50"></img>
+                        <img src = {face1} alt = "errror" className = "f1 d-block w-100"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {face2} alt = "errror" className = "f2 d-block w-50"></img>
+                        <img src = {face2} alt = "errror" className = "f2 d-block w-100"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {face3} alt = "errror" className = "f3 d-block w-50"></img>
+                        <img src = {face3} alt = "errror" className = "f3 d-block w-100"></img>
                     </div>
                 </div>
             </div>  
@@ -184,13 +184,13 @@ function Slots(props){
             <div className="col" id="slot2" data-interval="false" data-ride="carousel">
                 <div class="slider">
                 <div className =  "item one">
-                        <img src = {face1} alt = "errror" className = "f1 d-block w-50"></img>
+                        <img src = {face1} alt = "errror" className = "f1 d-block w-100"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {face2} alt = "errror" className = "f2 d-block w-50"></img>
+                        <img src = {face2} alt = "errror" className = "f2 d-block w-100"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {face3} alt = "errror" className = "f3 d-block w-50"></img>
+                        <img src = {face3} alt = "errror" className = "f3 d-block w-100"></img>
                     </div>
                 </div>
             </div>  
@@ -198,13 +198,13 @@ function Slots(props){
             <div className="col" id="slot3" data-interval="false" data-ride="carousel">
                 <div class="slider">
                 <div className =  "item one">
-                        <img src = {face1} alt = "errror" className = "f1 d-block w-50"></img>
+                        <img src = {face1} alt = "errror" className = "f1 d-block w-100"></img>
                     </div>
                     <div className =  "item two">
-                        <img src = {face2} alt = "errror" className = "f2 d-block w-50"></img>
+                        <img src = {face2} alt = "errror" className = "f2 d-block w-100"></img>
                     </div>
                     <div className =  "item three">
-                        <img src = {face3} alt = "errror" className = "f3 d-block w-50"></img>
+                        <img src = {face3} alt = "errror" className = "f3 d-block w-100"></img>
                     </div>
 
                 </div>

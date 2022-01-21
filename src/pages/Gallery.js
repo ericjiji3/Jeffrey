@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Navbar from "../components/Navbar.js";
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import $ from 'jquery';
+import Carousel from 'react-bootstrap/Carousel';
 import HorizontalScroll from "react-scroll-horizontal";
 import pic1 from "../components/pics/down_worse/1.JPG";
 import pic2 from "../components/pics/down_worse/2.JPG";
@@ -63,201 +66,619 @@ import styles from "./Gallery.css";
 
 function Gallery(){
 
-  return(
-    <div>
-        <div className = "row justify-content-center" style={{marginLeft: "0vw", marginRight: "0vw"}}>
-          <Navbar/>
-        </div>
-        <h1 className="header-down-bad text-center">Down Bad</h1>
-        <div className="down-bad">
-          <HorizontalScroll className="db-scroll">
+
+  let width = window.innerWidth;
+  if (width > 850) {
+    
+    return(
+      <div>
+          <div className = "row justify-content-center" style={{marginLeft: "0vw", marginRight: "0vw"}}>
+            <Navbar/>
+          </div>
+          <h1 className="header-down-bad text-center">Down Bad</h1>
+          <div className="down-bad">
+            <HorizontalScroll className="db-scroll">
+              <div className="main bg">
+              <img className="db-pic" src={badp1}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp2}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp3}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp4}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp5}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp6}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp7}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp8}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp9}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp10}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp11}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp12}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp13}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp14}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp15}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp16}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp17}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp18}></img>
+              </div>
+              <div className="main bg">
+              <img className="db-pic" src={badp19}></img>
+              </div>
+            </HorizontalScroll>
+          </div>
+          
+          <h1 className="header-down-worse text-center">Down Worse</h1>
+          <div className="down-worse">
+          
+          <HorizontalScroll className="dw-scroll">
             <div className="main bg">
-            <img className="db-pic" src={badp1}></img>
+              <img className="dw-pic" src={pic1}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp2}></img>
+            <div className="main bg2">
+              <img className="dw-pic" src={pic2}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp3}></img>
+            <div className="main bg3">
+              <img className="dw-pic" src={pic3}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp4}></img>
+            <div className="main bg4">
+              <img className="dw-pic" src={pic4}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp5}></img>
+            <div className="main bg5">
+              <img className="dw-pic" src={pic5}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp6}></img>
+            <div className="main bg6">
+              <img className="dw-pic" src={pic6}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp7}></img>
+            <div className="main bg7">
+              <img className="dw-pic" src={pic7}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp8}></img>
+            <div className="main bg8">
+              <img className="dw-pic" src={pic8}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp9}></img>
+            <div className="main bg9">
+              <img className="dw-pic" src={pic9}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp10}></img>
+            <div className="main bg10">
+              <img className="dw-pic" src={pic10}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp11}></img>
+            <div className="main bg11">
+              <img className="dw-pic" src={pic11}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp12}></img>
+            <div className="main bg12">
+              <img className="dw-pic" src={pic12}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp13}></img>
+            <div className="main bg13">
+              <img className="dw-pic" src={pic13}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp14}></img>
+            <div className="main bg14">
+              <img className="dw-pic" src={pic14}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp15}></img>
+            <div className="main bg15">
+              <img className="dw-pic" src={pic15}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp16}></img>
+            <div className="main bg16">
+              <img className="dw-pic" src={pic16}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp17}></img>
+            <div className="main bg17">
+              <img className="dw-pic" src={pic17}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp18}></img>
+            <div className="main bg18">
+              <img className="dw-pic" src={pic18}></img>
             </div>
-            <div className="main bg">
-            <img className="db-pic" src={badp19}></img>
+            <div className="main bg19">
+              <img className="dw-pic" src={pic19}></img>
+            </div>
+            <div className="main bg20">
+              <img className="dw-pic" src={pic20}></img>
+            </div>
+            <div className="main bg21">
+              <img className="dw-pic" src={pic21}></img>
+            </div>
+            <div className="main bg22">
+              <img className="dw-pic" src={pic22}></img>
+            </div>
+            <div className="main bg23">
+              <img className="dw-pic" src={pic23}></img>
+            </div>
+            <div className="main bg24">
+              <img className="dw-pic" src={pic24}></img>
+            </div>
+            <div className="main bg25">
+              <img className="dw-pic" src={pic25}></img>
+            </div>
+            <div className="main bg26">
+              <img className="dw-pic" src={pic26}></img>
+            </div>
+            <div className="main bg27">
+              <img className="dw-pic" src={pic27}></img>
+            </div>
+            <div className="main bg28">
+              <img className="dw-pic" src={pic28}></img>
+            </div>
+            <div className="main bg29">
+              <img className="dw-pic" src={pic29}></img>
+            </div>
+            <div className="main bg30">
+              <img className="dw-pic" src={pic30}></img>
+            </div>
+            <div className="main bg31">
+              <img className="dw-pic" src={pic31}></img>
+            </div>
+            <div className="main bg32">
+              <img className="dw-pic" src={pic32}></img>
+            </div>
+            <div className="main bg33">
+              <img className="dw-pic" src={pic33}></img>
+            </div>
+            <div className="main bg34">
+              <img className="dw-pic" src={pic34}></img>
+            </div>
+            <div className="main bg35">
+              <img className="dw-pic" src={pic35}></img>
+            </div>
+            <div className="main bg36">
+              <img className="dw-pic" src={pic36}></img>
+            </div>
+            <div className="main bg37">
+              <img className="dw-pic" src={pic37}></img>
+            </div>
+            <div className="main bg38">
+              <img className="dw-pic" src={pic38}></img>
             </div>
           </HorizontalScroll>
-        </div>
-        
-        <h1 className="header-down-worse text-center">Down Worse</h1>
-        <div className="down-worse">
-        
-        <HorizontalScroll className="dw-scroll">
-          <div className="main bg">
-            <img className="dw-pic" src={pic1}></img>
           </div>
-          <div className="main bg2">
-            <img className="dw-pic" src={pic2}></img>
-          </div>
-          <div className="main bg3">
-            <img className="dw-pic" src={pic3}></img>
-          </div>
-          <div className="main bg4">
-            <img className="dw-pic" src={pic4}></img>
-          </div>
-          <div className="main bg5">
-            <img className="dw-pic" src={pic5}></img>
-          </div>
-          <div className="main bg6">
-            <img className="dw-pic" src={pic6}></img>
-          </div>
-          <div className="main bg7">
-            <img className="dw-pic" src={pic7}></img>
-          </div>
-          <div className="main bg8">
-            <img className="dw-pic" src={pic8}></img>
-          </div>
-          <div className="main bg9">
-            <img className="dw-pic" src={pic9}></img>
-          </div>
-          <div className="main bg10">
-            <img className="dw-pic" src={pic10}></img>
-          </div>
-          <div className="main bg11">
-            <img className="dw-pic" src={pic11}></img>
-          </div>
-          <div className="main bg12">
-            <img className="dw-pic" src={pic12}></img>
-          </div>
-          <div className="main bg13">
-            <img className="dw-pic" src={pic13}></img>
-          </div>
-          <div className="main bg14">
-            <img className="dw-pic" src={pic14}></img>
-          </div>
-          <div className="main bg15">
-            <img className="dw-pic" src={pic15}></img>
-          </div>
-          <div className="main bg16">
-            <img className="dw-pic" src={pic16}></img>
-          </div>
-          <div className="main bg17">
-            <img className="dw-pic" src={pic17}></img>
-          </div>
-          <div className="main bg18">
-            <img className="dw-pic" src={pic18}></img>
-          </div>
-          <div className="main bg19">
-            <img className="dw-pic" src={pic19}></img>
-          </div>
-          <div className="main bg20">
-            <img className="dw-pic" src={pic20}></img>
-          </div>
-          <div className="main bg21">
-            <img className="dw-pic" src={pic21}></img>
-          </div>
-          <div className="main bg22">
-            <img className="dw-pic" src={pic22}></img>
-          </div>
-          <div className="main bg23">
-            <img className="dw-pic" src={pic23}></img>
-          </div>
-          <div className="main bg24">
-            <img className="dw-pic" src={pic24}></img>
-          </div>
-          <div className="main bg25">
-            <img className="dw-pic" src={pic25}></img>
-          </div>
-          <div className="main bg26">
-            <img className="dw-pic" src={pic26}></img>
-          </div>
-          <div className="main bg27">
-            <img className="dw-pic" src={pic27}></img>
-          </div>
-          <div className="main bg28">
-            <img className="dw-pic" src={pic28}></img>
-          </div>
-          <div className="main bg29">
-            <img className="dw-pic" src={pic29}></img>
-          </div>
-          <div className="main bg30">
-            <img className="dw-pic" src={pic30}></img>
-          </div>
-          <div className="main bg31">
-            <img className="dw-pic" src={pic31}></img>
-          </div>
-          <div className="main bg32">
-            <img className="dw-pic" src={pic32}></img>
-          </div>
-          <div className="main bg33">
-            <img className="dw-pic" src={pic33}></img>
-          </div>
-          <div className="main bg34">
-            <img className="dw-pic" src={pic34}></img>
-          </div>
-          <div className="main bg35">
-            <img className="dw-pic" src={pic35}></img>
-          </div>
-          <div className="main bg36">
-            <img className="dw-pic" src={pic36}></img>
-          </div>
-          <div className="main bg37">
-            <img className="dw-pic" src={pic37}></img>
-          </div>
-          <div className="main bg38">
-            <img className="dw-pic" src={pic38}></img>
-          </div>
-        </HorizontalScroll>
-        </div>
-        <div className="row">
-          <span>hello</span>
-        </div>
-        
-        
-    </div>
-  )
+          
+          
+      </div>
+    );
+  }else{
+        return (
+          <div >
+            <div className = "row justify-content-center" style={{marginLeft: "0vw", marginRight: "0vw"}}>
+              <Navbar/>
+            </div>
+            <h1 className="header-down-worse text-center">Down Bad</h1>
+              <Carousel className="gallery">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp1}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp2}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp3}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp4}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp5}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp6}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp7}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp8}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp9}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp10}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp11}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp12}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp13}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp14}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp15}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp16}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp17}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp18}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp19}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+              </Carousel>
+
+              <h1 className="header-down-worse text-center">Down Bad</h1>
+              <Carousel className="gallery">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic1}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic2}
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic3}
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic4}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic5}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic6}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic7}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic8}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic9}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic10}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic11}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic12}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic13}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic14}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic15}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic16}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic17}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic18}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic19}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic20}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic21}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic22}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic23}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic24}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic25}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic26}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic27}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic28}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic29}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic30}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic31}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic32}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic33}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic34}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic35}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic36}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic37}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic38}
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+
+              </Carousel>
+            </div>
+          
+        );
+  }
 }
 
 export default Gallery;

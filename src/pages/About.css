@@ -41,7 +41,7 @@
 .text{
   font-family: 'Coolvetica';
   font-size: .9em;
-  color: #DB3215;
+  /* color: #DB3215; */
 }
 @media(max-width: 850px){
   .aboutPop{

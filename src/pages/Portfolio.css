@@ -1,0 +1,31 @@
+.card{
+    box-shadow: 0 0px 20px 0px #FF6961;
+    background-color: #ffbdb9;
+}
+.card .card-img{
+    width:  300px;
+    height: 300px;
+    padding: 20px 0;
+    object-fit: cover;
+    margin: auto;
+}
+.card .title{
+    font-family: 'Coolvetica';
+    color: #FFFFFF;
+  -webkit-text-stroke: 1.5px #DB3215;
+  font-size: 1.5em;
+}
+
+.card .button{
+    font-family: 'Coolvetica';
+    background-color: white;
+    color: #DB3215;
+    border: 2px solid #DB3215;
+    
+    letter-spacing: .1em;
+    border-radius: 0;
+}
+.card .button:hover{
+    background-color: #DB3215;
+    color: white;
+}
