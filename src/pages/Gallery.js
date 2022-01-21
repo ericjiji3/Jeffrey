@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import Navbar from "../components/Navbar.js";
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import $ from 'jquery';
 import Carousel from 'react-bootstrap/Carousel';
 import HorizontalScroll from "react-scroll-horizontal";
