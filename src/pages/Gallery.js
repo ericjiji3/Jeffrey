@@ -75,6 +75,7 @@ function Gallery(){
             <Navbar/>
           </div>
           <h1 className="header-down-bad text-center">Down Bad</h1>
+          <span className="span-down-bad text-center">My first stand-up show in Austin, TX (190+ guests)</span>
           <div className="down-bad">
             <HorizontalScroll className="db-scroll">
               <div className="main bg">
@@ -138,6 +139,7 @@ function Gallery(){
           </div>
           
           <h1 className="header-down-worse text-center">Down Worse</h1>
+          <span className="span-down-worse text-center">My second show in Houston, TX (220+ guests)</span>
           <div className="down-worse">
           
           <HorizontalScroll className="dw-scroll">

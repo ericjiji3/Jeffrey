@@ -18,7 +18,8 @@ function Portfolio(){
         <div className = "row justify-content-center" style={{marginLeft: "0vw", marginRight: "0vw"}}>
             <Navbar/>
         </div>
-        <div className = "row justify-content-center">
+        <div className = "sketch-writing row justify-content-center">
+          <h2 className = "video-header my-5">Sketch-Writing</h2>
           <div className="col-md-3 mb-5">
           <Card className="card">
             <CardImg className="card-img" top width="100%" src={masterclassLogo} alt="Card image cap" />
@@ -38,15 +39,6 @@ function Portfolio(){
           </Card> 
           </div>
           <div className="col-md-3 mb-5">
-          <Card className="card">
-            <CardImg className="card-img" top width="100%" src={treatmentLogo} alt="Card image cap" />
-            <CardBody className="text-center">
-              <CardTitle className="title">The Transfer Treatment</CardTitle>
-              <Button className="button" href = {treatment} target="_blank">READ</Button>
-            </CardBody>
-          </Card> 
-          </div>
-          <div className="col-md-3 mb-5">
           <Card>
             <CardImg className="card-img" top width="100%" src={killLogo} alt="Card image cap" />
             <CardBody className="text-center">
@@ -56,6 +48,18 @@ function Portfolio(){
           </Card> 
           </div>
             
+        </div>
+        <div className = "screenplay row justify-content-center">
+            <h2 className = "video-header my-5">Screenplay</h2>
+            <div className="col-md-3 mb-5">
+          <Card className="card">
+            <CardImg className="card-img" top width="100%" src={treatmentLogo} alt="Card image cap" />
+            <CardBody className="text-center">
+              <CardTitle className="title">The Transfer Treatment</CardTitle>
+              <Button className="button" href = {treatment} target="_blank">READ</Button>
+            </CardBody>
+          </Card> 
+          </div>
         </div>
     </div>
   )

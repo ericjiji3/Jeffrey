@@ -30,6 +30,7 @@ class About extends React.Component{
       <div className = "row mb-5 justify-content-center">
         <div className = "col-md-3">
           <img className = "about" src = {headshot}></img>
+          <span className = "about-text">Contact:&nbsp;<a href = "mailto: jeffmacas@utexas.edu">jeffmacas@utexas.edu</a></span>
         </div>
         <div className = "col-md-5">
           <div className = "text">

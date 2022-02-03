@@ -3,7 +3,7 @@
     background-color: #ffbdb9;
 }
 .card .card-img{
-    width:  300px;
+    width:  200px;
     height: 300px;
     padding: 20px 0;
     object-fit: cover;
@@ -28,4 +28,14 @@
 .card .button:hover{
     background-color: #DB3215;
     color: white;
+}
+@media (max-width: 950px) {
+	.card .card-img{
+        width:  150px;
+    }
+}
+@media (max-width: 760px) {
+	.card .card-img{
+        width:  300px;
+    }
 }

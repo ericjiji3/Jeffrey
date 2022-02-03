@@ -7,6 +7,20 @@
     color: #FFFFFF;
   -webkit-text-stroke: 1.5px #DB3215;
 }
+.span-down-worse{
+    font-family: 'Coolvetica';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.span-down-bad{
+    font-family: 'Coolvetica';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
 .header-down-bad{
     font-family: 'Coolvetica';
     text-align: center;
