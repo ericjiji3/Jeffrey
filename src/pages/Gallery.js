@@ -279,6 +279,13 @@ function Gallery(){
             </div>
             <h1 className="header-down-worse text-center">Down Bad</h1>
               <Carousel className="gallery">
+                <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={badp0}
+                      alt="Zero slide"
+                    />
+                  </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
@@ -416,6 +423,13 @@ function Gallery(){
 
               <h1 className="header-down-worse text-center">Down Bad</h1>
               <Carousel className="gallery">
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src={pic0}
+                      alt="Zero slide"
+                    />
+                  </Carousel.Item>
                   <Carousel.Item>
                     <img
                       className="d-block w-100"

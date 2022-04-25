@@ -30,33 +30,6 @@ function Portfolio(){
           <h2 className = "video-header my-5">Sketch-Writing</h2>
           <div className="col-md-3 mb-5">
           <Card className="card">
-            <CardImg className="card-img" top width="100%" src={masterclassLogo} alt="Card image cap" />
-            <CardBody className="text-center">
-              <CardTitle className="title">MasterClass</CardTitle>
-              <Button className="button" href = {masterclass} target="_blank">READ</Button>
-            </CardBody>
-          </Card> 
-          </div>
-          <div className="col-md-3 mb-5">
-          <Card className="card">
-            <CardImg className="card-img" top width="100%" src={businessLogo} alt="Card image cap" />
-            <CardBody className="text-center">
-              <CardTitle className="title">Straight to Business</CardTitle>
-              <Button className="button" href = {business} target="_blank">READ</Button>
-            </CardBody>
-          </Card> 
-          </div>
-          <div className="col-md-3 mb-5">
-          <Card>
-            <CardImg className="card-img" top width="100%" src={killLogo} alt="Card image cap" />
-            <CardBody className="text-center">
-              <CardTitle className="title">Thou Shalt Not Kill</CardTitle>
-              <Button className="button" href = {kill} target="_blank">READ</Button>
-            </CardBody>
-          </Card> 
-          </div>
-          <div className="col-md-3 mb-5">
-          <Card className="card">
             <CardImg className="card-img" top width="100%" src={championshipLogo} alt="Card image cap" />
             <CardBody className="text-center">
               <CardTitle className="title">Championship Game</CardTitle>
@@ -89,7 +62,7 @@ function Portfolio(){
           <Card className="card">
             <CardImg className="card-img" top width="100%" src={tinderLogo} alt="Card image cap" />
             <CardBody className="text-center">
-              <CardTitle className="title">Tinder</CardTitle>
+              <CardTitle className="title">Netflix</CardTitle>
               <Link to = "/tinder" className = 'tinder' style = {{textDecoration: "none"}}>
                 <Button className="button">READ</Button>
               </Link>
