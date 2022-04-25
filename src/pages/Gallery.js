@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.js";
 import $ from 'jquery';
 import Carousel from 'react-bootstrap/Carousel';
 import HorizontalScroll from "react-scroll-horizontal";
+import pic0 from "../components/pics/down_worse/0.JPG";
 import pic1 from "../components/pics/down_worse/1.JPG";
 import pic2 from "../components/pics/down_worse/2.JPG";
 import pic3 from "../components/pics/down_worse/3.JPG";
@@ -42,6 +43,7 @@ import pic36 from "../components/pics/down_worse/36.JPG";
 import pic37 from "../components/pics/down_worse/37.JPG";
 import pic38 from "../components/pics/down_worse/38.JPG";
 
+import badp0 from "../components/pics/down_bad/0.JPG";
 import badp1 from "../components/pics/down_bad/1.JPG";
 import badp2 from "../components/pics/down_bad/2.JPG";
 import badp3 from "../components/pics/down_bad/3.JPG";
@@ -78,6 +80,9 @@ function Gallery(){
           <span className="span-down-bad text-center">My first stand-up show in Austin, TX (190+ guests)</span>
           <div className="down-bad">
             <HorizontalScroll className="db-scroll">
+              <div className="main bg">
+              <img className="db-pic" src={badp0}></img>
+              </div>
               <div className="main bg">
               <img className="db-pic" src={badp1}></img>
               </div>
@@ -143,6 +148,9 @@ function Gallery(){
           <div className="down-worse">
           
           <HorizontalScroll className="dw-scroll">
+          <div className="main bg">
+              <img className="dw-pic" src={pic0}></img>
+            </div>
             <div className="main bg">
               <img className="dw-pic" src={pic1}></img>
             </div>

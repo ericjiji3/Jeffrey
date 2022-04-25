@@ -1,0 +1,10 @@
+.tinder{
+    font-family: 'Coolvetica';
+    font-size: .9em;
+}
+
+@media(max-width: 450px){
+    .tinder{
+        text-align: center;
+    }
+}

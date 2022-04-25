@@ -9,6 +9,7 @@ import About from './pages/About';
 import Videos from './pages/Videos';
 import Portfolio from './pages/Portfolio';
 import Gallery from './pages/Gallery';
+import Tinder from './pages/Tinder';
 import Modal from "react-modal";
 import mail from './components/pics/mail.png';
 
@@ -27,6 +28,7 @@ function App() {
             <Route path = '/gallery' component = {Gallery}/>
             <Route path = '/about' component = {About}/>
             <Route path = '/portfolio' component = {Portfolio}/>
+            <Route path = '/tinder' component = {Tinder}/>
             <Route path = '/' exact component = {Home}/>
           </Switch>
       </Router>
